@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Night Picker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <h1>🎬 Movie Night Picker</h1>
+    <p>Find the perfect movie for tonight based on your mood 🍿</p>
+    <button onclick="pickMovie()">Pick for Me</button>
+    <h2 id="result">Your movie recommendation will appear here ✨</h2>
+  </header>
+
+  <section class="moods">
+    <h2>Pick by Mood</h2>
+    <div class="cards">
+      <div class="card" onclick="pickMoodMovie('happy')">😊 Happy</div>
+      <div class="card" onclick="pickMoodMovie('romantic')">💖 Romantic</div>
+      <div class="card" onclick="pickMoodMovie('mindblowing')">🌀 Mind-Blowing</div>
+      <div class="card" onclick="pickMoodMovie('cozy')">☕ Cozy</div>
+    </div>
+  </section>
+
+  <section class="top-picks">
+    <h2>Top Movie Picks</h2>
+    <div class="cards">
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SL1500_.jpg" alt="Interstellar">
+        <h3>Interstellar</h3>
+        <p>A mind-blowing sci-fi adventure beyond space and time.</p>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/I/81N6OeP5G-L._AC_SL1500_.jpg" alt="La La Land">
+        <h3>La La Land</h3>
+        <p>A beautiful romantic musical full of dreams and emotions.</p>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/I/81n0d4Pj5EL._AC_SL1500_.jpg" alt="Coco">
+        <h3>Coco</h3>
+        <p>A warm and emotional animated movie about family and music.</p>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/I/91Rc8cAmnAL._AC_SL1500_.jpg" alt="Inception">
+        <h3>Inception</h3>
+        <p>A thrilling movie that plays with dreams and reality.</p>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/I/81vpsIs58WL._AC_SL1500_.jpg" alt="Shrek">
+        <h3>Shrek</h3>
+        <p>A funny and cozy animated classic for a fun movie night.</p>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/I/71g40mlbinL._AC_SL1000_.jpg" alt="The Notebook">
+        <h3>The Notebook</h3>
+        <p>A timeless romantic drama full of love and emotion.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-site">
+    <h2>Why This Website?</h2>
+    <p>
+      Movie Night Picker is a simple front-end website designed to help users
+      choose a movie easily based on their mood or through a random recommendation.
+    </p>
+  </section>
+
+  <footer>
+    <p>Designed by Habiba 💜</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
